@@ -1,0 +1,88 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 2,
+    "identityHash": "79c896fd98ca84df2222d02d94179a13",
+    "entities": [
+      {
+        "tableName": "CatBreed",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `name` TEXT, `description` TEXT, `temperament` TEXT, `origin` TEXT, `lifeSpan` TEXT, `wikipediaUrl` TEXT, `dogFriendly` INTEGER NOT NULL, `weight_weight_imperial` TEXT, `weight_weight_metric` TEXT, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "temperament",
+            "columnName": "temperament",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "origin",
+            "columnName": "origin",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lifeSpan",
+            "columnName": "lifeSpan",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "wikipediaUrl",
+            "columnName": "wikipediaUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dogFriendly",
+            "columnName": "dogFriendly",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "weight.imperial_weight",
+            "columnName": "weight_weight_imperial",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "weight.metric_weight",
+            "columnName": "weight_weight_metric",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '79c896fd98ca84df2222d02d94179a13')"
+    ]
+  }
+}

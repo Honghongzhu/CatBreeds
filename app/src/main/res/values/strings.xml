@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Cat Breeds</string>
+    <string name="search">Search</string>
+    <string name="favorites">My Favorites</string>
+    <string name="api_key">1e83161f-ca48-46d3-9e74-efca2d57bc2c</string>
+    <string name="input">Find a cat breed</string>
+    <string name="description">Description:</string>
+    <string name="temperament">Temperament: </string>
+</resources>
